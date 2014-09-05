@@ -20,4 +20,3 @@ var spa = (function () {
     
     return {initModule: initModule};
 }());
-console.log(spa);
