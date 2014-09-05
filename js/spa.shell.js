@@ -33,7 +33,7 @@ spa.shell = (function () {
             chat_extend_height : 450,
             chat_retract_height : 15,
             chat_extended_title : 'Click to retract',
-            chat_retract_title : 'Click to extend'
+            chat_retracted_title : 'Click to extend'
         },
         stateMap  = {
             $container : null,
@@ -107,7 +107,7 @@ spa.shell = (function () {
             configMap.chat_retract_time,
             function() {
                 jqueryMap.$chat.attr(
-                    'title', configMap.chat_extended_title
+                    'title', configMap.chat_retracted_title
                 );
                 stateMap.is_chat_retracted = true;
 
